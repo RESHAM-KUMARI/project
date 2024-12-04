@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bundle & Save</h1>
+    <form id="bundleForm">
+      <div class="bundle-option">
+        <input type="radio" id="bundle1" name="bundle" value="195" data-discount="50" checked>
+        <label for="bundle1">
+          <div>
+            <strong>1 Pair</strong> <span class="price">DKK 195.00</span>
+          </div>
+          <span class="discount">50% OFF</span>
+        </label>
+        <div class="details">
+          <div>
+            
+            <label for="size1">Size</label>
+            <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+
+            <label for="color1">Colour</label>
+            <select id="color1">
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bundle-option">
+        <input type="radio" id="bundle2" name="bundle" value="345" data-discount="40">
+        <label for="bundle2">
+          <div>
+            <strong>2 Pair</strong> <span class="price">DKK 345.00</span>
+          </div>
+          <span class="discount">40% OFF</span>
+        </label>
+      </div>
+
+      <div class="bundle-option">
+        <input type="radio" id="bundle3" name="bundle" value="528" data-discount="60">
+        <label for="bundle3">
+          <div>
+            <strong>3 Pair</strong> <span class="price">DKK 528.00</span>
+          </div>
+          <span class="discount">60% OFF</span>
+        </label>
+      </div>
+
+      <div class="summary-container">
+        <div class="shipping">Free 2 Day Shipping</div>
+        <div class="total">Total: <span id="total-amount">DKK 360.00</span></div>
+      </div>
+
+      <button type="button" id="addToCart">+ Add to Cart</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
